@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>fx6</title>
+<style type="text/css">
+<!--
+#clock {
+  text-align: center;
+  font-family: Courier;
+  font-size: 10em;
+  text-transform: uppercase;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function clock ( ) {
+  var now = new Date ( );
+  document.getElementById("clock").firstChild.nodeValue = parseInt(now.getTime() / 1000).toString(16);
+}
+// -->
+</script>
+</head>
+<body onload="clock(); setInterval('clock()', 1000 )">
+<div id="clock">&nbsp;</div>
+</body>
+</html>

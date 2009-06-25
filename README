@@ -1,0 +1,5 @@
+Sick of holidays based on the Gregorian calendar?
+'fx6' is a holiday based on time_t. A celebration that happens when the last six digits of the hex representation of time_t is equal to 'ffffff'.
+
+To make sure that all code calculates the same dates, use a command like the one below:
+(java celebrate; java -jar rhino1_7R2/js.jar celebrate.js; php ./celebrate.php; ./celebrate.pl; ./celebrate.py; ./celebrate.rb; ./celebrate.sh) | sort | uniq -c
